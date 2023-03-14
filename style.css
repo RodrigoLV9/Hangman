@@ -138,10 +138,6 @@ body{
     gap:5px;
     font-size: 1.5em;
 }
-/* .letter{
-    font-size: 1.5em;
-    padding: 5px; 
-} */
 .line{
     width:30px;
     height:4px;
@@ -153,7 +149,6 @@ body{
     margin:10px auto;
     padding: 10px;
     width:250px;
-    /* border:1px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,7 +164,6 @@ body{
     font-size: 1.1rem;
     border-radius:5px;
     font-weight: bold;
-    /* color:white; */
 }
 .button-completed{
     background-color: rgb(13, 104, 13);
@@ -181,7 +175,6 @@ body{
 .abc{
     width:70%;
     padding:15px;
-    /* border: 1px solid white; */
     margin:10px auto;
     display: flex;
     align-items: center;
