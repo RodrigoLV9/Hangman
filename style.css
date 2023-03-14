@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgb(20, 18, 20);
+    color:white;
+}
+.title-main{
+    text-align: center;
+    padding: 15px;
+}
+.game{
+    margin:auto;
+    width:95%;
+    height: 500px;
+    border:2px solid rgb(80, 12, 12);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game__figure{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:40%;
+    height: 400px;
+}
+/* GALLOW */
+.gallow{
+    width:fit-content;
+    height: fit-content;
+    transform: scale(120%);
+}
+.gallow-item1{
+    width:100px;
+    height:3px;
+    background-color: white;
+}
+.gallow-item2{
+    width:3px;
+    height:50px;
+    background-color: white;
+    transform: translateX(97px);
+}
+.gallow-item3{
+    width:3px;
+    height:250px;
+    background-color: white;
+    transform: translateY(-50px);
+}
+.gallow-item4{
+    width:100px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+    transform: translate(-50px,-50px);
+}
+.gallow-item5{
+    width:50px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: white;
+    transform: rotate(-45deg) translate(200px,-210px);
+}
+/* STICKMAN */
+.stickman{
+    /* border: 1px solid white; */
+    width:fit-content;
+    height: fit-content;
+    padding:15px;
+    position:relative;
+    left:-33px;
+    top:82px
+}
+.stickman-head{
+    border-radius: 50%;
+    border:2px solid white;
+    width:50px;
+    height:50px;
+    scale:0
+}
+.stickman-body{
+    width:3px;
+    height:100px;
+    background-color: white;
+    transform:translateX(25px);
+    scale:0;
+}
+.stickman-legLeft{
+    width:2px;
+    height: 70px;
+    background-color:white;
+    transform-origin: top;
+    transform:rotate(45deg) translate(17px,-17px);
+    scale:0;
+}
+.stickman-legRight{
+    width:2px;
+    height: 70px;
+    background-color:white;
+    transform-origin: top;
+    transform:rotate(-45deg) translateX(67px) translateY(-34px);
+    scale:0;
+}
+.stickman-armLeft{
+    width:2px;
+    height:60px;
+    background-color: white;
+    transform-origin: bottom;
+    transform: rotate(45deg) translate(-165px,-200px);
+    scale:0;
+
+}
+.stickman-armRight{
+    width:2px;
+    height:60px;
+    background-color: rgb(255, 255, 255);
+    transform-origin: bottom;
+    transform: rotate(-45deg) translate(243px, -208px);
+    scale:0;
+}
+
+/* WORDS */
+.game__letters{
+    width:60%;
+    height:400px;
+    padding: 15px;
+    border: 1px solid white;
+    display:grid;
+    align-items: center;
+    justify-content: end;
+    grid-template-columns: repeat(11,1fr);
+    grid-template-rows: repeat(auto,60px);
+    gap:5px;
+    font-size: 1.5em;
+}
+/* .letter{
+    font-size: 1.5em;
+    padding: 5px; 
+} */
+.line{
+    width:30px;
+    height:4px;
+    background-color: rgb(114, 114, 131);
+}
+
+/* BUTTONS */
+.container-buttons{
+    margin:10px auto;
+    padding: 10px;
+    width:250px;
+    /* border:1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px
+    
+    
+}
+.button-completed, .button-next{
+    border:none;
+    outline: none;
+    width:110px;
+    height: 40px;
+    font-size: 1.1rem;
+    border-radius:5px;
+    font-weight: bold;
+    /* color:white; */
+}
+.button-completed{
+    background-color: rgb(13, 104, 13);
+}
+.button-next{
+    background-color:  rgb(190, 44, 44);
+}
+/* ABC */
+.abc{
+    width:70%;
+    padding:15px;
+    /* border: 1px solid white; */
+    margin:10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:15px;
+
+}
+.abc__items{
+    width:40px;
+    height:40px;
+    padding:10px;
+    background-color: rgb(50, 50, 77);
+    border-radius: 5px;
+    text-align: center;
+    cursor:pointer;
+    transition:transform .3s, background-color .3s
+}
+.abc__items:hover{
+    transform: scale(105%);
+    filter: opacity(.7);
+}
+
+/* JS */
+.abc__items-correct{
+    background-color: rgb(1, 54, 1);
+}
+.abc__items-incorrect{
+    background-color: rgb(116, 4, 4);
+}

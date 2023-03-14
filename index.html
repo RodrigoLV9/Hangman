@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title-main">Hangman</h1>
+    <div class="game">
+        <div class="game__figure">
+            <div class="gallow">
+                <div class="gallow-item1"></div>
+                <div class="gallow-item2"></div>
+                <div class="gallow-item3"></div>
+                <div class="gallow-item4"></div>
+                <div class="gallow-item5"></div>
+            </div>
+            <div class="stickman" id="stickman">
+                <div class="stickman-head" id="head"></div>
+                <div class="stickman-body" id="body"></div>
+                <div class="stickman-legLeft" id="legLeft"></div>
+                <div class="stickman-legRight" id="legRight"></div>
+                <div class="stickman-armLeft" id="armLeft"></div>
+                <div class="stickman-armRight" id="armRight"></div>
+            </div>
+        </div>
+        
+        <div class="game__letters" id="game__letters">
+            <!-- <div class="container-letter">
+                <div class="letter">R</div>
+                <div class="line"></div>
+            </div>
+            <div class="container-letter">
+                <div class="letter">R</div>
+                <div class="line"></div>
+            </div>
+            <div class="container-letter">
+                <div class="letter">R</div>
+                <div class="line"></div>
+            </div> -->
+        </div>
+    </div>
+    <div class="container-buttons">
+        <button class="button-completed" id="button-completed">Completed</button>
+        <button class="button-next" id="button-next">Next :/</button>
+    </div>
+    <div class="abc" id="abc">
+        <div class="abc__items">A</div>
+        <div class="abc__items">B</div>
+        <div class="abc__items">C</div>
+        <div class="abc__items">D</div>
+        <div class="abc__items">E</div>
+        <div class="abc__items">F</div>
+        <div class="abc__items">G</div>
+        <div class="abc__items">H</div>
+        <div class="abc__items">I</div>
+        <div class="abc__items">J</div>
+        <div class="abc__items">K</div>
+        <div class="abc__items">L</div>
+        <div class="abc__items">M</div>
+        <div class="abc__items">N</div>
+        <div class="abc__items">Ñ</div>
+        <div class="abc__items">O</div>
+        <div class="abc__items">P</div>
+        <div class="abc__items">Q</div>
+        <div class="abc__items">R</div>
+        <div class="abc__items">S</div>
+        <div class="abc__items">T</div>
+        <div class="abc__items">U</div>
+        <div class="abc__items">V</div>
+        <div class="abc__items">W</div>
+        <div class="abc__items">X</div>
+        <div class="abc__items">Y</div>
+        <div class="abc__items">Z</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
